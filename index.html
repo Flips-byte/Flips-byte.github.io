@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philipp Axt — Fachinformatiker Anwendungsentwicklung</title>
+<meta name="description" content="Philipp Axt, Fachinformatiker für Anwendungsentwicklung aus Unterfranken. PHP-Middleware, REST-APIs und Weboberflächen — Projekte, Stack und Kontakt.">
+<meta name="author" content="Philipp Axt">
+<meta name="theme-color" content="#D9DCD6">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Philipp Axt — Fachinformatiker Anwendungsentwicklung">
+<meta property="og:description" content="Ausgebildeter Anwendungsentwickler aus Unterfranken. Weboberflächen und die Schnittstellen dahinter.">
+<meta property="og:url" content="https://flips-byte.github.io/">
+
+<link rel="canonical" href="https://flips-byte.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316181A'/%3E%3Crect width='5' height='32' fill='%233B2AF0'/%3E%3C/svg%3E">
+
+<link rel="preload" href="assets/fonts/bricolage-grotesque-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+
+<!-- Ohne JavaScript bleiben Hero-Text und Reveals sichtbar -->
+<script>document.documentElement.className += " js";</script>
+</head>
+<body id="top">
+
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<!-- ── Telemetrie-Lineal: Fortschritt als Strecke, nicht als Dauer ── -->
+<div class="ruler" aria-hidden="true">
+  <div class="ruler-fill" id="rulerFill"></div>
+  <div class="ruler-head" id="rulerHead" style="top:0"><span id="rulerVal">0.000</span></div>
+  <div class="tick">0.0</div>
+  <div class="tick">0.5</div>
+  <div class="tick">1.0</div>
+</div>
+
+<!-- ── Ankernavigation, blendet nach dem Hero ein ── -->
+<nav class="topnav" id="topnav" aria-label="Abschnitte">
+  <ul>
+    <!-- Das Wort steckt in einem eigenen <span>: unter 820px zeigt die Leiste nur die
+         Nummern und blendet allein beim aktiven Punkt das Wort ein. 01 startet aktiv,
+         sonst stünde die Leiste zwischen Hero und erster Sektion ohne Wort da. -->
+    <li><a href="#ueber-mich" class="is-active" aria-current="true"><span class="num">01</span><span class="wort">Über mich</span></a></li>
+    <li><a href="#eigene-entwicklung"><span class="num">02</span><span class="wort">Entwicklung</span></a></li>
+    <li><a href="#kundenprojekte"><span class="num">03</span><span class="wort">Kundenprojekte</span></a></li>
+    <li><a href="#stack"><span class="num">04</span><span class="wort">Stack</span></a></li>
+    <li><a href="#kontakt"><span class="num">05</span><span class="wort">Kontakt</span></a></li>
+  </ul>
+</nav>
+
+<!-- ── Gepinnter Hero, scroll-linked ── -->
+<header class="stage" id="stage">
+  <div class="pin">
+    <h1 class="mark" id="mark">Philipp<br>Axt<small>Fachinformatiker Anwendungsentwicklung</small></h1>
+    <div class="reveal" id="reveal">
+      <p>Ausgebildeter Anwendungsentwickler aus Schweinfurt. 
+        Ich baue Weboberflächen und die Schnittstellen dahinter - von der eigenen PHP-Middleware bis zur Kundenwebsite.</p>
+    </div>
+    <div class="hint" id="hint" aria-hidden="true">weiter scrollen</div>
+  </div>
+</header>
+
+<main id="inhalt">
+<div class="wrap">
+
+  <!-- 01 ────────────────────────────────────────── -->
+  <section class="block" id="ueber-mich" aria-labelledby="h-ueber-mich">
+    <p class="eyebrow">01 — Über mich</p>
+    <h2 id="h-ueber-mich" class="rise">Zwei Jahre Umschulung, zehn Monate Praktikum.</h2>
+    <p class="lede rise">Ich habe eine zweijährige Umschulung zum Fachinformatiker für Anwendungsentwicklung absolviert und im Sommer 2026 mit dem IHK-Abschluss beendet (IHK Würzburg-Schweinfurt). 
+      Zehn Monate davon war ich im Praktikum bei Usermind GmbH in Würzburg, dort sind die Kundenprojekte auf dieser Seite entstanden. 
+      Mein Schwerpunkt liegt auf Webentwicklung: Backend-Arbeit mit PHP und REST-APIs, dazu Frontend von Hand und im Baukasten. 
+      Aktuell suche ich eine Vollzeitstelle im Raum Schweinfurt/Würzburg.</p>
+  </section>
+
+  <!-- 02 ────────────────────────────────────────── -->
+  <section class="block" id="eigene-entwicklung" aria-labelledby="h-eigene-entwicklung">
+    <p class="eyebrow">02 — Eigene Entwicklung</p>
+    <h2 id="h-eigene-entwicklung" class="rise">HydraMonitoring</h2>
+    <p class="lede rise">Mein IHK-Abschlussprojekt: ein JSON-Endpunkt in PHP, der die UptimeRobot-API v3 kapselt. 
+      Man übergibt eine Domain, zurück kommen Monitor-Status, Ausfallhistorie und selbst berechnete Uptime-Kennzahlen in einer einzigen Antwort. 
+      Die Uptime-Werte entstehen aus den Incident-Daten, weil die API dafür keinen eigenen Endpunkt anbietet.
+      Zusätzlich eine Behandlung für überlappende Ausfallzeiträume, damit ein Ausfall, der ins Zeitfenster hineinragt, nicht doppelt zählt.</p>
+
+    <dl class="meta rise">
+      <dt>Mein Anteil</dt>
+      <dd>Vollständig eigenständig entwickelt.</dd>
+      <dt>Stack</dt>
+      <dd class="stack">PHP 8 · cURL · REST-API</dd>
+      <dt>Quellcode</dt>
+      <dd><a href="https://github.com/Flips-byte/hydra-monitoring" target="_blank" rel="noopener">github.com/Flips-byte/hydra-monitoring</a></dd>
+    </dl>
+
+    <figure class="code rise">
+<pre><span class="c">// Downtime je Fenster berechnen (Overlap des Incident-Intervalls mit Zeitfenster)</span>
+<span class="c">// Warum? Ein Incident kann teilweise im Fenster liegen -&gt; Overlap liefert korrekte Sekunden.</span>
+$downtime24h += calcOverlapSeconds($startTs, $endTs, $now - $window24h, $now);
+$downtime7d  += calcOverlapSeconds($startTs, $endTs, $now - $window7d,  $now);
+$downtime30d += calcOverlapSeconds($startTs, $endTs, $now - $window30d, $now);
+
+<span class="c">/**
+ * Berechnet die Überschneidung (in Sekunden) zwischen Incident-Intervall und Zeitfenster.
+ * Warum?
+ * Ausfälle starten/enden nicht exakt am Fensterbeginn. Overlap verhindert falsche Summen.
+ */</span>
+<span class="k">function</span> calcOverlapSeconds(<span class="k">int</span> $startTs, <span class="k">int</span> $endTs, <span class="k">int</span> $windowStartTs, <span class="k">int</span> $windowEndTs): <span class="k">int</span>
+{
+    $overlapStart = max($startTs, $windowStartTs);
+    $overlapEnd   = min($endTs, $windowEndTs);
+
+    <span class="k">return</span> max(0, $overlapEnd - $overlapStart);
+}</pre>
+      <!-- <wbr> nach den Schrägstrichen: der Pfad bricht an den Trennern statt
+           mitten im Wort. Kopiert man ihn, bleibt er unverändert. -->
+      <figcaption>Ausschnitt aus <span>uptimerobot/<wbr>services/<wbr>getStatistics.php</span></figcaption>
+    </figure>
+  </section>
+
+  <!-- 03 ────────────────────────────────────────── -->
+  <section class="block" id="kundenprojekte" aria-labelledby="h-kundenprojekte">
+    <p class="eyebrow">03 — Kundenprojekte</p>
+    <h2 id="h-kundenprojekte" class="rise">Drei Website-Projekte aus dem Praktikum.</h2>
+    <p class="lede rise">Umgesetzt mit WordPress und Elementor - Meine Arbeit lag im Seitenaufbau, in der Struktur der Inhalte und in der responsiven Umsetzung.</p>
+
+    <!-- Projekt 1: breit -->
+    <article class="project project--wide rise">
+      <figure class="shot">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/img/brk-hausnotruf-720.webp 720w, assets/img/brk-hausnotruf-1440.webp 1440w"
+                  sizes="(min-width: 900px) 884px, calc(100vw - 100px)">
+          <img src="assets/img/brk-hausnotruf-1440.jpg" width="1440" height="688" loading="lazy" decoding="async"
+               alt="Startseite der BRK-Hausnotruf-Website: Schlagzeile „Hilfe auf Knopfdruck“ neben dem Foto einer älteren Frau mit ihrem Sohn, links der Notrufsender am Handgelenk.">
+        </picture>
+      </figure>
+      <div class="project-body">
+        <h3>BRK Hausnotruf Unterfranken</h3>
+        <p>Website für den Hausnotruf-Dienst des Bayerischen Roten Kreuzes, Zielgruppe sind ältere Menschen und deren Angehörige.
+          Sechs Tarifpakete mussten vergleichbar dargestellt werden, ohne die Besucher zu überfordern.</p>
+        <dl class="meta">
+          <dt>Mein Anteil</dt>
+          <dd>Umsetzung der Seite von Header bis Footer, Aufbau der Paketkarten und Info-Pop-ups, Slider, FAQ-Bereich, Unterseite „Ansprechpartner vor Ort“, Bildauswahl und Inhaltspflege.</dd>
+          <dt>Stack</dt>
+          <dd class="stack">WordPress · Elementor · Custom CSS · Custom JS</dd>
+          <dt>Live</dt>
+          <dd><a href="https://brk-hausnotruf.de/" target="_blank" rel="noopener">brk-hausnotruf.de</a></dd>
+        </dl>
+      </div>
+    </article>
+
+    <!-- Projekt 2: Bild links -->
+    <article class="project project--split rise">
+      <figure class="shot">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/img/haller-metall-720.webp 720w, assets/img/haller-metall-1440.webp 1440w"
+                  sizes="(min-width: 900px) 480px, calc(100vw - 100px)">
+          <img src="assets/img/haller-metall-1440.jpg" width="1440" height="689" loading="lazy" decoding="async"
+               alt="Startseite von HALLER Metall: Luftaufnahme des Werks in Pönning auf der linken Seite, dunkle Textfläche mit Logo und Claim „Metal. Mastered.“ rechts.">
+        </picture>
+      </figure>
+      <div class="project-body">
+        <h3>HALLER Metall</h3>
+        <p>Relaunch für einen Metallverarbeiter mit Standorten in Bayern und Tschechien. Zweisprachig, mit Leistungsübersicht, Branchenlösungen, Karrierebereich und Newsroom.</p>
+        <dl class="meta">
+          <dt>Mein Anteil</dt>
+          <dd>Seitenaufbau von Header bis Footer, Inhaltsanordnung, responsive Umsetzung mit fluiden Größen über <code>clamp()</code>, Hover-Effekt der Branchen-Sektion (Graustufen zu Farbe).</dd>
+          <dt>Stack</dt>
+          <dd class="stack">WordPress · Elementor · Custom CSS · Custom JS</dd>
+          <dt>Live</dt>
+          <dd><a href="https://haller-metall.de/" target="_blank" rel="noopener">haller-metall.de</a></dd>
+        </dl>
+      </div>
+    </article>
+
+    <!-- Projekt 3: Bild rechts -->
+    <article class="project project--split project--flip rise">
+      <figure class="shot shot--right">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/img/shieldtec-720.webp 720w, assets/img/shieldtec-1440.webp 1440w"
+                  sizes="(min-width: 900px) 480px, calc(100vw - 100px)">
+          <img src="assets/img/shieldtec-1440.jpg" width="1440" height="586" loading="lazy" decoding="async"
+               alt="Startseite von SHIELDTEC: Polarlicht-Motiv mit Logo auf der linken Seite, dunkle Textfläche mit der Überschrift zu Abschirmlösungen rechts.">
+        </picture>
+      </figure>
+      <div class="project-body">
+        <h3>SHIELDTEC</h3>
+        <p>Website eines Schweizer Herstellers von Abschirmlösungen für Automotive, Aerospace und Defense. Zweisprachig, mit branchenspezifischen Unterseiten und Video-Header.</p>
+        <dl class="meta">
+          <dt>Mein Anteil</dt>
+          <dd>Umsetzung im Team, um den Termin zu halten. Mitarbeit an Aufbau und Ausarbeitung einzelner Seitenbereiche.</dd>
+          <dt>Stack</dt>
+          <dd class="stack">WordPress · Elementor · Custom CSS · Custom JS</dd>
+          <dt>Live</dt>
+          <dd><a href="https://shieldtec.com/" target="_blank" rel="noopener">shieldtec.com</a></dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+
+  <!-- 04 ────────────────────────────────────────── -->
+  <section class="block" id="stack" aria-labelledby="h-stack">
+    <p class="eyebrow">04 — Stack</p>
+    <h2 id="h-stack" class="rise">Womit ich arbeite.</h2>
+    <ul class="stack-grid rise">
+      <li>PHP</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>WordPress</li>
+      <li>Elementor</li>
+      <li>Git</li>
+      <li>REST-APIs</li>
+    </ul>
+  </section>
+
+  <!-- 05 ────────────────────────────────────────── -->
+  <section class="block" id="kontakt" aria-labelledby="h-kontakt">
+    <p class="eyebrow">05 — Kontakt</p>
+    <h2 id="h-kontakt" class="rise">Auf Stellensuche im Raum Schweinfurt/Würzburg.</h2>
+    <dl class="contact rise">
+      <dt>E-Mail</dt>
+      <dd><a href="mailto:Philippaxt96@gmail.com">Philippaxt96@gmail.com</a></dd>
+      <dt>GitHub</dt>
+      <dd><a href="https://github.com/Flips-byte" target="_blank" rel="noopener">github.com/Flips-byte</a></dd>
+      <dt>Standort</dt>
+      <dd>Raum Schweinfurt/Würzburg</dd>
+    </dl>
+  </section>
+
+  <footer>Philipp Axt · Vanilla HTML · CSS · JavaScript · PHP · REST-APIs</footer>
+</div>
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>

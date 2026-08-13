@@ -1,0 +1,13 @@
+# Bildoriginale (~7 MB) — ausgeliefert werden nur die Fassungen in assets/img/
+assets/*.png
+assets/*.jpg
+
+# Arbeitsdateien, gehören nicht ins Deployment
+portfolio-prompt-new.md
+scroll-scrub-demo.html
+aenderungen-runde2.md
+papiertextur-02.md
+vorschau-nav.html
+
+# lokales Prüfwerkzeug, gehört nicht auf die Seite
+tools/
