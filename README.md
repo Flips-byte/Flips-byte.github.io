@@ -38,3 +38,14 @@ der Abschnitte und der aktive Punkt in der Navigation laufen über zwei
 
 Bricolage Grotesque und IBM Plex liegen als Subsets im Repo und werden lokal
 ausgeliefert — kein Google-CDN, keine Anfrage an Dritte.
+
+Beide stehen unter der [SIL Open Font License 1.1](https://openfontlicense.org/).
+Die Lizenztexte liegen unverändert bei den Schriftdateien:
+
+- [`assets/fonts/LICENSE-Bricolage-Grotesque.txt`](assets/fonts/LICENSE-Bricolage-Grotesque.txt)
+  — Copyright 2022 The Bricolage Grotesque Project Authors
+- [`assets/fonts/LICENSE-IBM-Plex.txt`](assets/fonts/LICENSE-IBM-Plex.txt)
+  — Copyright © 2017 IBM Corp., Reserved Font Name „Plex"
+
+Die Subsets sind gegenüber den Originalen im Zeichenumfang reduziert; die OFL
+erlaubt das ausdrücklich, solange Lizenz und Copyright-Vermerk mitgehen.
